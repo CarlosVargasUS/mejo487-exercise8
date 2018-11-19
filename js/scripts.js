@@ -25,11 +25,11 @@ $(document).ready(function () {
               console.log(info.address);
               //checking that the info recieved is not undefined
               if (info.address == check) {
-                html += '<div class="ocean">The space station is currently over an ocean </div>';
+                html = '<div class="ocean">The space station is currently over an ocean </div>';
               } else if (info.address.city == check) {
-                html += '<div class="country">The space station is currently over ' + info.address.country + '</div>';
+                html = '<div class="country">The space station is currently over ' + info.address.country + '</div>';
               } else {
-                html += '<div class="both">The space station is currently over ' + info.address.city + ', ' + info.address.country + '</div>';
+                html = '<div class="both">The space station is currently over ' + info.address.city + ', ' + info.address.country + '</div>';
               }
 
               $('#target').html(html);
